@@ -2,9 +2,10 @@
 
 Members: Aycel Villalobos, Surabhi Nair, Tom Eldar, David Ingraham, David Du, Patrick Hemmer
 
-Description: An app and website which allows you to organize all of your events in one space, to buy and sell tickets, and to discuss events. The app's main focus is it's ability to integrate with other sites and conveniently notify you of events that are coming up.
-
-Vision Statement: Create and manage all of your events in one space. 
+Description: An app and website which allows you to organize all of your planned events in one space, conveniently and cleanly. Rendezvous integrates with other websites and allows users to quickly find events that interest them. They are able to do search quickly through categories we've predefined (sports, music, etc) as well as search for an event by name or location if they want to be more specific. When a user plans an event, the event is easily displaced in the app and website through a few customizable display options (calendar, list, etc). By allowing the user to play with notification settings Rendezvous will always remind the user that their event is approaching. Finally, Rendezvous allows friends to view, share, and discuss the events they are interested in. 
+      While there are many other scheduler and planning apps avalilable, Rendezvous is unique because it combines finding event information, planning events, and having a social experience all-in-one. Many sites specialize in only one part of this scheduling process but Rendezvous allows everything to occur quickly and simulatenously. By creating both an app and a website Rendezvous allows users to accomplish all of this on the go and at home so that they will never miss an important event.  
+      
+Vision Statement: Create, manage, and share all of your events in one space. 
 
 Motivation: There are applications and websites out there that allow for event planning but none sync together, e.g Facebook events do not sync to my Apple Calendar. This is going to help those who already enjoy maintaining a schedule and are organized, as well as those who want to. Currently, there is not an effective method to notify users about the events they RSVP'ed to. There needs to be an event managing/planning application that joins all of your events together in one place and helps to remind and keep you updated about the events you are choosing to attend. 
 
