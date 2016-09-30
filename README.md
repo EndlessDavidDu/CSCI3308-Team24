@@ -8,13 +8,13 @@ Motivation: There are applications and websites out there that allow for event p
 
 Risks:
 -Working environment: We won't always be working on the project together in the same place. We are not familiar with one another's worth ethic and we need to learn how we work best with one another (who fits best into which role).
--Lack of experience: None of us have made a phone application before so achieving the mobile app may be an obstacle the group will have to overcome. Also, none of us are familiar with the programming languages used to develop mobile applications. There are some in the group who have experience with web development but not the entire group. Some of us may have to play "catch up:.
+-Lack of experience: None of us have made a phone application before so achieving the mobile app may be an obstacle the group will have to overcome. Also, none of us are familiar with the programming languages used to develop mobile applications. There are some in the group who have experience with web development but not the entire group. Some of us may have to play "catch up".
 
 
-Risk Mitigation Plan:
+Risk Mitigation Plan:	We can plan meetings and work times that way the group can work collaboratively in the same space. This will make it easy for all of us to communicate with one another in an easy and time effective way. Furthermore, we can all use various resources such as the Internet, books, other people, tutorials and more to make up for the lack of experience we have in app development. We can also communicate our strengths and weaknesses to each other and assign tasks accordingly. For the sake of time and lack of experience we can also focus on one platform for the app. 
 
-Version Control:
+Version Control: GitHub
 
-Software Development Methodology:
+Software Development Methodology: Agile
 
-Collaboration Tool:
+Collaboration Tool: Slack
