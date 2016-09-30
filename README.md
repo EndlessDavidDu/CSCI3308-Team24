@@ -17,6 +17,6 @@ Risk Mitigation Plan:	We can plan meetings and work times that way the group can
 
 Version Control: GitHub
 
-Software Development Methodology: Agile
+Software Development Methodology: Agile - Software is developed in incremental, rapid cycles. You are continuously planning what you need to get done and things can happen simultaneously. We use agile when the requirements aren't initially known, when technology is not well understood, and when product definition is unstable or changing. 
 
 Collaboration Tool: Slack
