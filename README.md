@@ -4,6 +4,8 @@ Members: Aycel Villalobos, Surabhi Nair, Tom Eldar, David Ingraham, David Du, Pa
 
 Description: 
 
+Vision Statement: 
+
 Motivation: There are applications and websites out there that allow for event planning but none sync together, e.g Facebook events do not sync to my Apple Calendar. This is going to help those who already enjoy maintaining a schedule and are organized, as well as those who want to. Currently, there is not an effective method to notify users about the events they RSVP'ed to. There needs to be an event managing/planning application that joins all of your events together in one place and helps to remind and keep you updated about the events you are choosing to attend. 
 
 Risks:
