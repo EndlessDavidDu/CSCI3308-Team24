@@ -21,4 +21,5 @@ INSERT INTO EventType VALUES (0, 'Business');
 INSERT INTO EventType VALUES (1, 'Music'); 
 INSERT INTO EventType VALUES (2, 'School'); 
 INSERT INTO EventType VALUES (3, 'Sports'); 
+INSERT INTO EventType VALUES (4, 'Games');
 GO
