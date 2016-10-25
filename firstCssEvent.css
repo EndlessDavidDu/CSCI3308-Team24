@@ -1,0 +1,60 @@
+
+body {
+  background: #4ECDC4;
+  color: #ffffff;
+  font-family: sans-serif;
+}
+
+nav {
+  width: 100%;
+  background: #4ECDC4;
+ }
+
+ul {
+  text-align: center;
+  list-style: none;
+  overflow: hidden;
+}
+
+ul li {
+  padding: 6px;
+  border: solid;
+  display: inline-block;
+  margin: 9px;
+  width: 15%;
+}
+
+ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  width: 100%; 
+}
+
+.desc {
+  margin: 5px;
+  padding: 19px;
+  border: 2px solid;
+}
+
+.people {
+  margin: 5px;
+  margin-top: 15px;
+  padding: 5px;
+  padding-left: 10px;
+  background: #313447;
+}
+
+.people img {
+  margin: 7px;
+}
+
+.rest1, .rest2, .photorest {
+  margin-top: 7px;
+  border: solid 3px;
+  padding-left: 10px;
+}
+
+figcaption {
+  margin-bottom: 5px;
+}
