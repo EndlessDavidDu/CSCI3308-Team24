@@ -37,7 +37,7 @@ INSERT INTO Event VALUES (4, 0, 'Soft Dev Meeting', false, '2016-10-27 18:00:00'
 INSERT INTO Event VALUES (5, 3, 'Buffs Game vs UCLA', false, '2016-11-03 19:00:00', '2016-11-03 22:00:00', 'Folsom Field');
 
 INSERT INTO CustEvent VALUES (1, 1, 1);
-INSERT INTO CustEvent VALUES (2, 1, 1);
-INSERT INTO CustEvent VALUES (3, 1, 1);
-INSERT INTO CustEvent VALUES (4, 1, 1);
-INSERT INTO CustEvent VALUES (5, 1, 1);
+INSERT INTO CustEvent VALUES (2, 1, 2);
+INSERT INTO CustEvent VALUES (3, 1, 3);
+INSERT INTO CustEvent VALUES (4, 2, 1);
+INSERT INTO CustEvent VALUES (5, 3, 4);
