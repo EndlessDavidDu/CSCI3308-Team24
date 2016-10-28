@@ -3,7 +3,7 @@
 CREATE DATABASE RVSQL;
 GO
 USE RVSQL;
-/* drop tables for now. Once we figure everything out we won't drop every time */
+/* Drop tables for now. Once we figure everything out we won't drop every time */
 DROP TABLE Event;
 DROP TABLE Customer;
 DROP TABLE CustEvent;
