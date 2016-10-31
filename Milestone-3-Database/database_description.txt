@@ -1,1 +1,7 @@
-
+Our team has decided to use mysql, because it is the database we are most comfortable with given the lab and HW we've done.
+At the moment we have 4 tables: CustEvent, Customer, Event, and EventType.
+Each table contains 5 rows.
+CustEvent is the table which connects the rest of the tables and contains all of our primary keys.
+Customer contains all the user info
+Event contains all the info about an event
+EventType contains the info about what type of event it is i.e. music, school,etc...
