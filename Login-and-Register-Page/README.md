@@ -1,6 +1,6 @@
 Decription: The login and registration pages for rendezvous. Coded in HTML and PHP. 
 
-Instructions to run on Linux machine:
+Instructions to run on Linux machine:  
 1. php -S localhost:8080 //use this command in the terminal while in the directory with the files.  
 2. Open another terminal and enter your mysql server.  
 3. Use the database provided on github.  
