@@ -9,9 +9,9 @@ DROP TABLE Customer;
 DROP TABLE CustEvent;
 DROP TABLE EventType;
 GO
-	
+
 CREATE TABLE Event (eventID int primary key, eventType int, description char(150), isClosed bool, startTime datetime, endTime datetime, location char(50));
-CREATE TABLE Customer (custID int primary key, custName char(30), userEmail char(50), userPassword char(15));
+CREATE TABLE Customer (custID int NOT NULL auto_increment primary key, custName char(30), userEmail char(50), userPassword char(255));
 CREATE TABLE CustEvent (custeventID int primary key, eventID int, custID int); 
 CREATE TABLE EventType (typeID int primary key, description char(50));
 GO
