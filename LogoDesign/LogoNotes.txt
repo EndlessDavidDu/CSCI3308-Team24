@@ -1,0 +1,6 @@
+Notes on details of design
+Original Design by Patrick Hemmer
+hex 00A99D for logo and 363636 for background in the original psd file and grey-bluegreen
+For teal-banana mockup background is 00bff3 and logo is #fff568
+lavender mockup background is #8493ca
+Geneva Font R
