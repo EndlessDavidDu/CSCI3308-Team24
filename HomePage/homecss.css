@@ -1,0 +1,152 @@
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 20%;
+}
+
+.carousel-control.left, .carousel-control.right {
+  background-image:none;
+}
+
+.carousel-inner .active.left { 
+	left: -33%; 
+}
+.carousel-inner .next { 
+	left:  33%; 
+}
+
+.carousel-inner .prev {
+	left: -33%;
+}
+
+input[type=text] {
+background: #4d4d4d;
+color: ##40d3af;
+   padding-top: 10px;
+   float: right;
+   width: 200px;
+   padding-left: 20px;
+   -webkit-transition: width 0.4s ease-in-out;
+   transition: width 0.4s ease-in-out; 
+
+}
+
+input[type=text]:focus {
+  /* background: #333333; */
+   width: 40%;
+
+}
+
+input[type=text]:hover {
+  background: #333333; 
+  -webkit-transition: background 200ms ease-out;
+-moz-transition: background 200ms ease-out;
+-ms-transition: background 200ms ease-out;
+-o-transition: background 200ms ease-out;
+transition: background 200ms ease-out; 
+
+
+ width: 40%;
+   -webkit-transition: width .4s ease-out;
+-moz-transition: width .4s ease-out;
+-ms-transition: width .4s ease-out;
+-o-transition: width .4s ease-out;
+transition: width .4s ease-out;
+}
+
+
+body {
+	background-color: #eef0f2;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+    z-index: 60;
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    left: -300px;
+    background-color: #363636;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: 20px;
+    padding-left: 15px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+}
+
+.navigation li:hover {
+    background: #191919;
+    -webkit-transition: background 300ms ease-out;
+-moz-transition: background 300ms ease-out;
+-ms-transition: background 300ms ease-out;
+-o-transition: background 300ms ease-out;
+transition: background 300ms ease-out;
+}
+
+.navigation a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #40d3af;
+
+}
+
+.navigation a:hover {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+.menu {
+    float: left;
+    margin: 0;
+    padding-right: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-top: 20px;
+    text-decoration: none;
+}
+
+.menu:hover {
+    color: #40d3af;
+}
+
+.close {
+    cursor: pointer;
+    color: #ffffff;
+}
+
+header {
+    font-size: 34px;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    background: #363636;
+    color: #ffffff;
+    font-family: sans-serif;
+    padding:20px;
+    z-index: 50; /*This is the way to ensure that the carousel appears BEHIND the header*/
+}
+
+.centered {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 120px;
+}
+.Carousel { /*Carousels apparently have a z-index of 10*/
+    margin-top: 70px;
+    margin-bottom: 100px;
+    width: 80%;
+    overflow: auto;
+}
