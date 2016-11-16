@@ -1,0 +1,6 @@
+Version 1
+Need to be Improved:
+-Code needs to be made more consistent
+-Use of actual Icons in header and navigation
+-Resolve any navigation bar CSS
+-Carousels do full rotation for incrementing a single item
