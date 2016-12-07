@@ -1,0 +1,82 @@
+
+.secondary {
+    font-size: 34px;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    background: #363636;
+    color: #ffffff;
+    font-family: sans-serif;
+    padding-top: 40px;
+    margin-top: -50px;
+    z-index: 50; /*This is the way to ensure that the carousel appears BEHIND the header*/
+}
+
+.cd-user-modal-container {
+  padding-top: 100px;
+  position: relative;
+  max-width: 600px;;
+  margin: 3em auto 4em;
+  cursor: auto;
+  border-radius: 0.25em;
+}
+
+.cd-user-modal-container input {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.cd-user-modal-container input[type=text] {
+  background: #4d4d4d;
+  color: ##40d3af;
+  padding-top: 10px;
+  float: right;
+  padding-left: 20px;
+  transition: background-color 0.5s ease;
+  transition: color 0.5s ease;
+
+}
+
+.cd-user-modal-container input[type=submit] {
+  background-color: #4d4d4d;
+  color: #ffffff;
+}
+
+.cd-user-modal-container .full-width:hover {
+   background: #333333;
+   width: 100%;
+}
+.cd-user-modal-container .full-width:focus {
+   background: #333333;
+   color: #fff;
+   width: 100%;
+}
+
+.cd-starting, .cd-ending {
+  display: block;
+}
+
+.cd-user-modal-container .half-width {
+  width: 47%;
+  padding: 3px;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.cd-form {
+  padding: 1.4em;
+}
+.cd-form .fieldset {
+  position: relative;
+  margin: 1.4em 0;
+}
+
+.cd-form .fieldset:last-child {
+  margin-bottom: 0;
+}
+.cd-form label {
+  font-size: 20px;
+  font-size: 0.875rem;
+}
