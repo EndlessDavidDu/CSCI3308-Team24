@@ -33,6 +33,7 @@ ul {
   text-align: center;
   list-style: none;
   overflow: hidden;
+  color:#e0750b;
 }
 
 ul li {
@@ -47,6 +48,7 @@ ul li a {S
   text-decoration: none;
   text-align: center;
   width: 100%; 
+  color: #40d3af;
 }
 
 .desc {
@@ -80,6 +82,7 @@ figcaption {
 
 .centered {
   text-align:  center;
+  color: #40d3af;
 }
 
 .left{
