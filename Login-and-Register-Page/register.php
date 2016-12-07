@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML>
 <html>
 	<body>
 <?php 
@@ -13,8 +13,8 @@
 	}
 	set_error_handler ("customError");
 	//Connect to the Database
-	 $intcon = mysqli_connect("localhost","tomeldar","1234abcd","RVSQL");
-		if (!$intcon){	die('Could not connect: ' . sql_error());}
+	 $conn = mysqli_connect("localhost","tomeldar","1234abcd","RVSQL");
+		if (!$conn){	die('Could not connect: ' . sql_error());}
 
 
 	$email=$_POST['email'];
@@ -32,8 +32,8 @@
 	$sql = "SELECT * FROM Customer WHERE custName='".$username."'";
 	//echo $sql;
 	//echo "<BR>";
-	$Result=mysqli_query($intcon, $sql);
-	$row=mysqli_fetch_array($Result);
+	$result=mysqli_query($conn, $sql);
+	$row=mysqli_fetch_array($result);
 	if ($row) {
 		//We found the user
 		echo "Username taken<BR>";
@@ -41,14 +41,17 @@
 		//echo "<BR>";
 	} else {
  		//We did not find the user so we will create it
-		echo "Creating user<BR>";
+		//echo "Creating user<BR>";
 		$sql = "INSERT INTO Customer (custName, userEmail, userPassword) VALUES ('".$username."','".$email."','".$hash_pass."');";
-		echo $sql;
-		$Result=mysqli_query($intcon, $sql);
+		//echo $sql;
+		$result=mysqli_query($conn, $sql);
+		header('Refresh:2; url=index.html');
+		echo "User created";
+		exit;
  	}
 	
 	//Close the DB
-	mysqli_close($intcon)
+	mysqli_close($conn)
 ?>
 	</body>
 </html>
