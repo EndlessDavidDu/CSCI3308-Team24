@@ -6,7 +6,7 @@ Instructions to run on Linux machine:
 3. Use the database provided on github.  
 3. Run these following commands in the mysql terminal:  
       -create user tomeldar IDENTIFIED by '1234abcd';  
-      -GRANT ALL ON rendezvous.sql TO tomeldar;  
+      -GRANT ALL ON rendezvous.sql TO 'tomeldar';  
 4. Go on any browser and type this into the url "localhost:8080/index.html"  
 
 Current Functionality:
