@@ -10,16 +10,16 @@ DROP TABLE CustEvent;
 DROP TABLE EventType;
 GO
 
-CREATE TABLE Event (eventID int primary key, eventType int, description char(150), isClosed bool, startTime datetime, endTime datetime, location char(50));
-CREATE TABLE Customer (custID int NOT NULL auto_increment primary key, custName char(30), userEmail char(50), userPassword char(255));
-CREATE TABLE CustEvent (custeventID int primary key, eventID int, custID int); 
-CREATE TABLE EventType (typeID int primary key, description char(50));
+CREATE TABLE Event (eventID int NOT NULL AUTO_INCREMENT, eventType int, description char(150), isClosed bool, startTime datetime, endTime datetime, location char(50), PRIMARY KEY (eventID));
+CREATE TABLE Customer (custID int NOT NULL AUTO_INCREMENT, custName char(30), userEmail char(50), userPassword char(255), PRIMARY KEY (custID));
+CREATE TABLE CustEvent (custeventID int NOT NULL AUTO_INCREMENT, eventID int, custID int, PRIMARY KEY (custeventID)); 
+CREATE TABLE EventType (typeID int NOT NULL AUTO_INCREMENT, description char(50), PRIMARY KEY (typeID));
 GO
 
 /* We will need to create more data for the other tables but this is a start for one of them  */
-INSERT INTO EventType VALUES (0, 'Business'); 
-INSERT INTO EventType VALUES (1, 'Music'); 
-INSERT INTO EventType VALUES (2, 'School'); 
-INSERT INTO EventType VALUES (3, 'Sports'); 
-INSERT INTO EventType VALUES (4, 'Games');
+INSERT INTO EventType (description) VALUES ('Business'); 
+INSERT INTO EventType (description) VALUES ('Music'); 
+INSERT INTO EventType (description) VALUES ('School'); 
+INSERT INTO EventType (description) VALUES ('Sports'); 
+INSERT INTO EventType (description) VALUES ('Games');
 GO
