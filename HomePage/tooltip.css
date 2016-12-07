@@ -1,0 +1,53 @@
+/* THIS IS FOR THE TOOLTIP BOX */
+.notif-tooltip .notification-list {
+    top: -5px; /*This and the next command cause the popup to appear right of the navigation*/
+    left: 100%;
+
+    /*To keep it invisible*/
+    visibility: hidden;
+
+    /*Size of the box*/
+    width: 300px;
+    height: 300px;
+
+    /*To make it all fit into one box*/
+    overflow: scroll;
+
+    /*background-color: #363636; */
+    background-color: #ffffff;
+    color: #40d3af;
+    border-radius: 6px;
+
+    position: absolute;
+    z-index: 11;
+    margin-top: 70px;
+}
+
+.notif-tooltip .notification-list:hover:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 50px;
+    border-style: solid;
+    border-color: black;
+    z-index: 51;
+}
+
+.notif-tooltip:hover .notification-list {
+    visibility: visible;
+    
+}
+
+.notification-list li {
+    border-color: blue;
+    border-width: 5px;
+    border-style: solid;
+    top: 0px;
+    left: 0px;
+}
+
+.notification-list li:hover {
+    background-color: #ffffff;
+}
