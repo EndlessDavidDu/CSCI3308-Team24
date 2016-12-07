@@ -10,7 +10,7 @@ DROP TABLE CustEvent;
 DROP TABLE EventType;
 GO
 
-CREATE TABLE Event (eventID int NOT NULL AUTO_INCREMENT, eventType int, description char(150), isClosed bool, startTime datetime, endTime datetime, location char(50), PRIMARY KEY (eventID));
+CREATE TABLE Event (eventID int NOT NULL AUTO_INCREMENT, eventType int, title char(100), description char(150), isClosed bool, startDate datetime, endTime datetime, venue char(50), city char(50), stateCode char(2), PRIMARY KEY (eventID));
 CREATE TABLE Customer (custID int NOT NULL AUTO_INCREMENT, custName char(30), userEmail char(50), userPassword char(255), PRIMARY KEY (custID));
 CREATE TABLE CustEvent (custeventID int NOT NULL AUTO_INCREMENT, eventID int, custID int, PRIMARY KEY (custeventID)); 
 CREATE TABLE EventType (typeID int NOT NULL AUTO_INCREMENT, description char(50), PRIMARY KEY (typeID));
