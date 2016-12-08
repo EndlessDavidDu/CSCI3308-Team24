@@ -203,7 +203,7 @@ header {
     overflow: scroll;
 
     /*background-color: #363636; */
-    background-color: #ffffff;
+    background: #4d4d4d;
     color: #40d3af;
     border-radius: 6px;
 
@@ -223,22 +223,34 @@ header {
     border-color: black;
     z-index: 51;
 }
-
+.notif-tooltip. notification-list::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+  z-index: 100;
+}
 .notif-tooltip:hover .notification-list {
     visibility: visible;
     
 }
 
+.notification-list ol {
+    padding-right: 35px;
+}
+
 .notification-list li {
-    border-color: blue;
+    border-color: #FFA9D1;
     border-width: 5px;
     border-style: solid;
     top: 0px;
-    left: 0px;
+    left: 0px; 
 }
 
 .notification-list li:hover {
-    background-color: #ffffff;
+    background-color: #363636;
 }
-
-
