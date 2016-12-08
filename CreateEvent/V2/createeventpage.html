@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+  <title>Create an Event</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="homecss.css">
+  <link rel="stylesheet" href="createeventcss.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/586ed81ef0.js"></script>
+</head>
+
+<!-- Code modified from https://codyhouse.co/gem/loginsignup-modal-window/ -->
+
+<header class="secondary">Create Event
+</header>
+
+<body>
+	<div class="cd-user-modal"> 
+  	<div class="cd-user-modal-container"> <!-- this is the container wrapper -->
+
+    <div id="cd-add-event"> <!-- Begin add event -->
+          <p class="event-name-class">
+            <label class="cd-name">Event Name</label>
+            <input class="full-width" id="event-name" type="text" placeholder="Name">
+          </p>
+
+          <p class="location">
+            <label class="loc">Location</label><br>
+            <input class="third-width" id="event-loc" type="text"  placeholder="State">
+            <input class="third-width" id="event-loc" type="text"  placeholder="City">
+            <input class="third-width" id="event-loc" type="text"  placeholder="Venue">
+           
+            
+          </p> <br>
+
+          <p class="fieldset">
+            <label class="cd-starting">Start Date and Time</label>
+            <input class="half-width" id="event-start-date" type="date"  placeholder="Date">
+            <input class="half-width" id="event-start-time" type="time"  placeholder="Time">
+          
+          </p>
+
+
+          <p class="fieldset">
+            <label class="cd-ending">End Date and Time</label>
+            <input class="half-width" id="event-end-date" type="date"  placeholder="Date">
+             <input class="half-width" id="event-end-time" type="time"  placeholder="Time">
+          </p>
+
+          <p class="fieldset">
+            <label class="cd-desc">Add Description</label>
+            <textarea rows="4" col="10" id="event-desc" placeholder="Description"></textarea>
+          </p>
+
+          <p class="fieldset">
+            <input class="full-width" type="submit" value="Create">
+          </p>
+        </form>
+      </div> <!-- cd-add-event -->
+ 
+    
+  </div>
+</div> 
+
+</body>
+
+</html>
