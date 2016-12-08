@@ -17,11 +17,13 @@
 		if (!$conn){	die('Could not connect: ' . sql_error());}
 	$title=$_POST['title'];
 	$descr=$_POST['descr'];
-	//$startTime=$_POST['startTime'];
-	//$startDate=$_POST['startDate'];
-	//$endTime=$_POST['endTime'];
-	//$endDate=$_POST['endDate'];
-	$location=$_POST['location'];
+	$startTime=$_POST['startTime'];
+	$startDate=$_POST['startDate'];
+	$endTime=$_POST['endTime'];
+	$endDate=$_POST['endDate'];
+	$venue = $_POST['venue'];
+	$city = $_POST['city'];
+	$stateCode = $_POST['stateCode'];
 	
 	//$startDateTime = $startDate + $startTime;
 	//$endDateTime = $endDate + $endTime;
@@ -49,7 +51,8 @@
  		//We did not find an event so we will create it. 
  		//
 		echo "Creating new Event<BR>";
-		$sql = "INSERT INTO Event(eventType, title, description) VALUES ('2' , '".$title."' , '".$descr."');";  
+		$sql = "INSERT INTO Event(eventType, title, description, isClosed, startDate, startTime, endDate, endTime, venue, city, stateCode) VALUES 
+			('2' , '".$title."' , '".$descr."' , '0', '".$startDate."' , '".$startTime."', '".$endDate."' , '".$endTime."' , '".$venue."', '".$city."', '".$stateCode."');";  
 				echo $sql;
 		$Result=mysqli_query($conn, $sql);
  	}
