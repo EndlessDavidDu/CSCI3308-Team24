@@ -29,9 +29,30 @@
     <section class = "centered">
       
       <article class = "desc">
-        <h2>Date & Time: August 16, 2017 10:00 am <br> Location: Chatauqua Park Boulder, CO</h2>
-        <p>Join the Computer Graphics Club for a hike at Chatauqua before the start of the semester! Be sure to bring your hiking shoes and plenty of water. 
-         </p>
+        <?php
+        $id=$_POST["primaryKey"];
+        echo $id;
+        $conn = mysqli_connect("localhost","tomeldar","1234abcd","RVSQL");
+          if (!$conn){  die('Could not connect: ' . sql_error());}
+        $sql = "SELECT description, startTime, endTime, location FROM Event WHERE description='Riri'";
+        $result=mysqli_query($conn, $sql);
+        $row=mysqli_fetch_array($result);
+        if ($row) {
+          //echo "nice<BR>";
+          $venue = $row["location"];
+          //echo $venue;
+          echo "<p>Event Info: " . $row["description"]. " - Time: " . $row["startTime"]. " " . $row["endTime"]. "<br>Location: " . $row["location"]. "</p>";
+          echo "<iframe
+                  width='600'
+                  height='450'
+                  frameborder='0' style='border:0'
+                  src='https://www.google.com/maps/embed/v1/place?key=AIzaSyBeMVx9l1DZ6Rfn_yd05noIx28CXfX64ts&q=".$venue.",Denver,CO' allowfullscreen>
+                </iframe>";
+          
+        } else {
+          echo "lol";
+        }
+      ?>
       </article>
       
 <section id="eventbox">
@@ -106,3 +127,4 @@
   </div>
 </body>
 </html>
+
