@@ -1,5 +1,5 @@
 Instructions for Making Final Product Work  
-  
+(Do everything below with administrative priveleges a.k.a. sudo -i)
 1. Download all of the repository zip and place all the files from the Final-Product directory in your /var/www/ directory.  
 2. Enter into your mysql and enter the command 'create database RVSQL'  
 3. quit mysql and enter this command in terminal while in /var/www/: 'mysql -p RVSQL < createTables.sql'  
