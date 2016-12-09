@@ -3,7 +3,7 @@ Instructions for Making Final Product Work
 1. Download all of the repository zip and place all the files from the Final-Product directory in your /var/www/ directory.  
 2. Enter into your mysql and enter the command 'create database RVSQL'  
 3. quit mysql and enter this command in terminal while in /var/www/: 'mysql -p RVSQL < createTables.sql'  
-4. Enter mysql again and enter these two command "create user 'tomeldar'@'localhost' IDENTIFIED by '1234abcd;" and "GRANT ALL ON *.* TO 'tomeldar'@'localhost';"  
+4. Enter mysql again and enter these two command "create user 'tomeldar'@'localhost' IDENTIFIED by '1234abcd;" and "GRANT ALL ON (asterisk sign).(asterisk sign) TO 'tomeldar'@'localhost';"  asterisk will not show up on README. please use the asterisk sign  
 5. Open a new terminal and run this command while in /var/www/ 'php -S localhost:8080'  
 6. Go to localhost:8080/index.html on your browser, make a user, log in, and you're good to go 
 
