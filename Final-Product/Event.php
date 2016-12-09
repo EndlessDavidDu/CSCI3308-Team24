@@ -31,10 +31,10 @@
       <article class = "desc">
         <?php
         $id=$_POST["primaryKey"];
-        echo $id;
+        //echo $id;
         $conn = mysqli_connect("localhost","tomeldar","1234abcd","RVSQL");
           if (!$conn){  die('Could not connect: ' . sql_error());}
-        $sql = "SELECT description, startTime, endTime, venue, city, stateCode FROM Event WHERE venue ='Mount Chautauqua'";
+        $sql = "SELECT startDate, description, startTime, endTime, venue, city, stateCode FROM Event WHERE venue ='Mount Chautauqua'";
         $result=mysqli_query($conn, $sql);
         $row=mysqli_fetch_array($result);
         if ($row) {
@@ -44,7 +44,7 @@
 	  $stateCode = $row["stateCode"];
 	  
           //echo $venue;
-          echo "<p>Event Info: " . $row["description"]. " - Time: " . $row["startTime"]. " " . $row["endTime"]. "<br>Location: " . $row["venue"]. "</p>";
+          echo "<p>Event Info: " . $row["description"]. " - Date: ".$row["startDate"]."<br>Time: " . $row["startTime"]. "-" . $row["endTime"]. "<br>Location: " . $row["venue"]. "</p>";
           echo "<iframe
                   width='600'
                   height='450'
