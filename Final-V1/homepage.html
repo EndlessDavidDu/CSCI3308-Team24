@@ -54,7 +54,7 @@
     <div class="carousel slide Carousel">
       <div class="carousel-inner">
         <div class="item active">
-          <div class="col-md-4"><a href="#"><img src="http://placehold.it/500/7cffd3/fff&amp;text=Bowling" class="img-responsive"></a></div>
+          <div class="col-md-4"><a href="#"><img src="http://placehold.it/500/7cffd3/fff&amp;text=Bowling" class="img-responsive" onclick="sendValue('1')"></a></div>
         </div>
         <div class="item">
           <div class="col-md-4"><a href="#"><img src="http://placehold.it/500/CCCCCC&amp;text=2" class="img-responsive"></a></div>
@@ -141,6 +141,20 @@
 
 
 <script src="javahome.js"></script>
+<script>
+var sendValue = function(primaryKey) {
+  var form = document.createElement('form');
+  var field = document.createElement('input');
+  form.setAttribute("method","post");
+  form.setAttribute("action","Event.php");
+  field.setAttribute("name","primaryKey");
+  field.setAttribute("value",primaryKey);
+  form.appendChild(field);
+  document.body.appendChild(form);
+  //window.open("Event.php","view");
+  form.submit();
+};
+</script>
 
 </body>
 </html> 
