@@ -1,0 +1,107 @@
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 20%;
+}
+
+.carousel-control.left, .carousel-control.right {
+  background-image:none;
+}
+
+.carousel-inner .active.left { 
+  left: -33%; 
+}
+.carousel-inner .next { 
+  left:  33%; 
+}
+
+.carousel-inner .prev {
+  left: -33%;
+}
+
+body {
+  background:  #eef0f2;;
+  color: #000;
+  font-family: sans-serif;
+}
+
+nav {
+  width: 100%;
+  background: #363636;
+ }
+
+ul {
+  text-align: center;
+  list-style: none;
+  overflow: hidden;
+  color:#e0750b;
+}
+
+ul li {
+  padding: 6px;
+  border: solid;
+  display: inline-block;
+  margin: 9px;
+  width: 15%;
+}
+
+ul li a {S
+  text-decoration: none;
+  text-align: center;
+  width: 100%; 
+  color: #40d3af;
+}
+
+.desc {
+  margin: 5px;
+  padding: 19px;
+  border: 2px solid;
+  color: #2e9b80;
+}
+.friend-header {
+  
+}
+.people {
+  margin: 5px;
+  margin-top: 15px;
+  padding: 5px;
+  padding-left: 10px;
+  background: #363636;
+  color: white;
+}
+
+.people img {
+  margin: 7px;
+}
+
+.rest1, .rest2, .photorest {
+  margin-top: 7px;
+  border: solid 3px;
+  padding-left: 10px;
+  color: #2e9b80;
+}
+
+figcaption {
+  margin-bottom: 5px;
+}
+
+.centered {
+  text-align:  center;
+  color: #e0750b;
+    
+}
+
+.left{
+  text-align: left;
+}
+
+article div image{
+  position: relative;
+}
+
+.Carousel { /*Carousels apparently have a z-index of 10*/
+    margin-top: 70px;
+    margin-bottom: 100px;
+    width: 80%;
+    overflow: auto;
+}
